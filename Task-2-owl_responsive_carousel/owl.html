@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Carousel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--linking the required cdns and roboto font stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type=" text/css" href="./libs/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type=" text/css" href="./libs/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.slim.min.js"></script>
+    <script src="./libs/dist/owl.carousel.min.js"></script>
+    <script>
+        $(function()
+        {
+            //setting up owl carousel
+           $('.slides').owlCarousel ({
+               nav: true,
+               center: true,
+               loop: false,
+               dots: false,
+               margin: 20
+               ,responsive:
+               {
+                        0:{
+                            items:1
+                            
+                        },
+                        600:{                                //",responsive" determines the no of items visible in a range of pixels. Modify accordingly.
+                            items:3
+                           
+                        },
+                        1000:{
+                            items:5
+                           
+                        }
+                }
+           })
+        })
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="slides owl-carousel owl-theme owl-loaded">
+            <!--Slides-->
+            <div class="slide">
+                <div class="photo">
+                    <img src="./imgs/dog.jpeg" alt="pic">
+                    <div class="title">
+                        <span class="sub-title">Dog</span>
+                        <span>
+                            <label> Caption </label> 
+                        </span>
+                        <span>
+                            <label> tagline</label> 
+                        </span>
+                    </div>
+                </div>
+            </div>
+        
+            <!--Slides-->
+            <div class="slide">
+                <div class="photo">
+                    <img src="./imgs/bt1.jpg" alt="pic">
+                    <div class="title">
+                        <span class="sub-title">rabbit</span>
+                        <span>
+                            <label> Caption  </label> 
+                        </span>
+                        <span>
+                            <label>tagline  </label>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <!--Slides-->
+            <div class="slide">
+                <div class="photo">
+                    <img src="./imgs/images.jpg" alt="pic">
+                    <div class="title">
+                        <span class="sub-title">Cat</span>
+                        <span>
+                            <label> Caption </label> 
+                        </span>
+                        <span>
+                            <label> tagline </label> 
+                        </span>
+                    </div>
+                </div>
+            </div>
+             <!--Slides-->
+             <div class="slide">
+                <div class="photo">
+                    <img src="./imgs/bt4.jpg" alt="pic">
+                    <div class="title">
+                        <span class="sub-title">Bleh</span>
+                        <span>
+                            <label> Caption </label> 
+                        </span>
+                        <span>
+                            <label>tagline</label> 
+                        </span>
+                    </div>
+                </div>
+            </div>
+             <!--Slides-->
+             <div class="slide">
+                <div class="photo">
+                    <img src="./imgs/dark3.jpg" alt="pic">
+                    <div class="title">
+                        <span class="sub-title">bleh</span>
+                        <span>
+                            <label> Caption </label> 
+                        </span>
+                        <span>
+                            <label> tagline</label> 
+                        </span>
+                    </div>
+                </div>
+            </div>
+             <!--Slides-->
+             <div class="slide">
+                <div class="photo">
+                    <img src="./imgs/bt2.jpg" alt="pic">
+                    <div class="title">
+                        <span class="sub-title">Bleh</span>
+                        <span>
+                            <label> Caption </label> 
+                        </span>
+                        <span>
+                            <label>tagline</label> 
+                        </span>
+                    </div>
+                </div>
+            </div>
+             <!--Slides-->
+             <div class="slide">
+                <div class="photo">
+                    <img src="./imgs/bt3.jpg" alt="pic">
+                    <div class="title">
+                        <span class="sub-title">BLeh</span>
+                        <span>
+                            <label> Caption </label> 
+                        </span>
+                        <span>
+                            <label> tagline </label> 
+                        </span>
+                    </div>
+                </div>
+            </div>
+             <!--Slides-->
+             <div class="slide">
+                <div class="photo">
+                    <img src="./imgs/bg1.jpg" alt="pic">
+                    <div class="title">
+                        <span class="sub-title">Bleh</span>
+                        <span>
+                            <label> Caption </label> 
+                        </span>
+                        <span>
+                            <label>tagline </label> 
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Carousel </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background: #000;
+            }
+
+            .carousel{
+                height: 750px;
+                perspective: 600px;
+            }
+
+            .carousel .carousel-item{
+                width: 400px;
+            }
+
+            .carousel .carousel-item img{
+                width: 100%;
+            }
+
+            .carousel .carousel-item h3{
+                margin: -5px 0 0;
+                padding: 0;
+                background: #fff;
+                color: #000;
+                box-sizing: border-box;
+                padding: 10px 5px;
+                font-weight: bold;
+                font-size: 2em;
+                text-align: center;
+            }
+        </style>
+    </head>   
+
+    <body>
+
+        <div class="carousel">
+            <!--slide1-->
+            <div class="carousel-item">
+                <img src="bt4.jpg">
+                <h3>Caption/Tagline</h3>
+            </div>
+            <!--slide2-->
+            <div class="carousel-item">
+                <img src="bt1.jpg">
+                <h3>Caption/Tagline</h3>
+            </div>
+            <!--slide3-->
+            <div class="carousel-item">
+                <img src="bt2.jpg">
+                <h3>Caption/Tagline</h3>
+            </div>
+            <!--slide4-->
+            <div class="carousel-item">
+                <img src="bt3.jpg">
+                <h3>Caption/Tagline</h3>
+            </div>
+            <!--slide5-->
+            <div class="carousel-item">
+                <img src="bt.jpg">
+                <h3>Caption/Tagline</h3>
+            </div>
+        </div>
+        
+        
+        <!--linking the jquery and javascript cdn for materialize css-->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!--initializing the javascript for carousel-->
+        <script type="text/javascript">
+                $(document).ready(function()
+                {
+                    $('.carousel').carousel();
+                });
+      
+        </script>
+
+    </body>
+</html>
