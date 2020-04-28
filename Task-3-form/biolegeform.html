@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <!--Linking the required cdn and googlefont stylesheet-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">">
+        <link href="https://fonts.googleapis.com/css?family=Orbitron:700,800,900&display=swap" rel="stylesheet">
+        <style>
+            body
+            {
+                background: white;
+                margin-top: 130px;
+                background-size: cover;
+            }
+            
+           .register-right img
+            {
+                width: 100%;
+                height: 100%;
+                margin-top: -60px;
+                margin-bottom: 18px;
+            }
+            .register-left
+            {
+                margin-top: -100px;
+                border: none;
+                background: #f8f8f8;
+                padding: 50px;
+                background-color: transparent;
+                padding: 20px;
+                margin-bottom: 50px;
+                
+            }
+            .register-left h2
+            {
+                text-align: center;
+                margin-bottom: 10px;
+                color: #000;
+            }
+            .register-form
+            {
+                padding: 10px;
+               
+            }
+            .register-left .btn-primary
+            {
+                
+                border-radius: 1.2rem;
+                border: none;
+                font-weight: 600;
+                background: blue;
+                width: 120px;
+                color: #fff;
+                padding: 10px;
+                display: block;
+
+
+            }
+            .register-left .btn-primary:hover
+            {
+                background: #000;
+            }
+           
+            .vertical
+            {
+                border-left: 6px solid deepskyblue;
+                border-radius: 25px;
+                height: 400px;                               
+                position:absolute; 
+                left: 50%;
+                margin-top: -40px;
+            }
+            p
+            {
+                font-family: 'Orbitron', sans-serif;
+                font-weight: bold;
+                font-size: xx-large;
+                text-align: initial;                           /*used for the biolege logo*/
+                margin-left: 130px;
+                color: deepskyblue;
+                margin-top: -130px;
+            }
+            .picp
+            {
+                width: 40px;
+                height: 40px;                    /*used for the logo pic*/
+            }
+        </style>
+    </head>
+    <body>
+       
+
+        <div class="container">
+            <!--the biolege icon and logo-->
+            <p> <img class="picp"src="bicon.png" alt="pic"> BIOLEGE</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+           
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <div class="row">
+                                            
+                                      
+                                            
+                        
+                        <div class="col-md-6 register-left">
+                            <h2> Please Enter Your Details</h2>
+                            <form>
+                                <div class="register-form">
+                                    <div class="form-group">
+                                        <input type="text" name="" placeholder="Enter your name" class="form-control">
+                                    </div>
+                                    <select name="gender" id="" class="form-group" style="padding: 10px; border-radius: 7%; color: #495057;">
+                                        <option value="">---Select Your Gender---</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="form-group">
+                                        <input type="text" name="" placeholder="Enter your DOB" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="" placeholder="Enter your State" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" name="" placeholder="Enter your City/Towm" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                       <input type="text" name="" placeholder="Enter your address" class="form-control">
+                                    </div>
+                                    <button type="button" class="btn btn-primary"> Submit </button>
+                                </div>
+                            </form>
+                            
+                        </div>
+                        <!--used for the vertical line separator-->
+                            <div class="col-md-2">
+                                <div class="vertical"></div>
+                            </div>
+                            <!--the right-side picture-->
+                            <div class="col-md-4 register-right" >
+                                    <img src="bgbiolege.jpg" alt="biolegeicon">
+                            </div>    
+                            
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
