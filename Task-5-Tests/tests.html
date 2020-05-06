@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!--linking the required cdns and googlefonts-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="tests.css">
+        <title>My Tests</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+           <!--navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">BIOLEGE</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                
+                <form class="example" action="action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      &nbsp;&nbsp;&nbsp;
+                      <img src="person.png" alt="icon" class="icon1">
+                      <a class="nav-link"> Welcome<br/> My Account<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      &nbsp;&nbsp;&nbsp;
+                      <img src="person.png" alt="icon" class="icon1">
+                      <a class="nav-link"> Biolege<br/> Membership <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      &nbsp;&nbsp;&nbsp;
+                      <img src="person.png" alt="icon" class="icon1">
+                      <a class="nav-link"> 0 items<br/> My Cart<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      &nbsp;&nbsp;&nbsp;
+                      <img src="person.png" alt="icon" class="icon1">
+                      <a class="nav-link"> Location <br/> Enter PIN Code<span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                 
+                </div>
+              </nav>
+              <!--end of navbar-->
+
+            <!--phone view-->  
+            <div class="phone">
+              <div id="mySidebar" class="sidebar">
+                  <!--close btn in the sidebar-->
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul>
+                  <li>
+                  
+                  <a href="#"><img src="person.png" alt="icon" class="icon2"> &nbsp; My Details</a>
+                  </li>
+                  <li>
+                  
+                  <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp; My Tests</a>
+                  </li>
+                  <li>
+                  
+                  <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp; My Reports</a>
+                  </li>
+                  <li>
+                  
+                  <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp; Notifications</a>
+                  </li>
+                  <li>
+                  
+                    <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp; Payment Method</a>
+                  </li>
+                  <li>
+                  
+                    <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp; Membership</a>
+                  </li>
+                  <li>
+                  
+                    <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp; My Family</a>
+                  </li>
+                  <li>
+                  
+                    <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp; Help</a>
+                  </li>
+                  <br> <br>
+                  <li>
+                  
+                    <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp; Sign Out</a>
+                  </li>
+                </ul>  
+              </div>
+              
+              <div id="main">
+                <!--btn for sidebar-->
+                <button class="openbtn" onclick="openNav()">&#9776; </button>
+                <br>
+                <h2>My Account</h2>
+              </div>
+              <!--tablet/desktop view specifics-->
+              <div class="tabdview">
+              <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp;My Details</a> <br> <br>
+              <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp;My Tests</a> <br> <br>
+              <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp;My Reports</a> <br> <br>
+              <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp;Notifications</a> <br> <br>
+              <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp;Payment Method</a> <br> <br>
+              <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp;Memebership</a> <br> <br>
+              <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp;My Family</a> <br> <br>
+              <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp;Help</a> <br> <br> <br> 
+              <a href="#"><img src="person.png" alt="icon" class="icon2">&nbsp;Sign Out</a>
+              </div>
+              <!--tablet/desktop view specifics end-->
+              
+              <!--the form for the details-->
+              <form action="#" class="main">
+                <h1>My Tests</h1>
+                <p style="font-size: 20px; color: grey; font-family: 'Montserrat', sans-serif; margin-block-end: 0px; font-weight: bold;">Test History</p>
+                <hr style="border: 1px solid grey; margin-block-start: 0;">
+                <div class="card text-center">
+                  <div class="card-body">
+                     <div  style="display: flex; justify-content: space-between;">
+                      <p style="color: grey; font-size: 13px;" > Date </p> 
+                      <p style="color: grey; font-size: 13px;"> Time </p>
+                      <p style="color: grey; font-size: 13px;"> Status</p>
+                     </div> 
+                    <p class="card-text" style="display: block; text-align: left;">
+                     Name <br> Tests <br> Lab 
+                    </p>
+                   <a href="#" class="btn btn-primary" style="color: orange; background-color:white; float: right; font-weight: bold; border: 2px solid grey;">Test Again</a> <br><br>
+                   <a href="#" class="btn btn-primary" style="float: right; color: white; background-color: grey;font-weight: bold; border: 2px solid grey;">View Report</a> <br><br>
+                  </div>
+                  <div class="card-footer" >
+                    Total <br>
+                    <p style="color: black; font-size: 13px; font-weight: bold;"> Order Number</p>
+                    <div class="fft">
+                      <a href="#">Invoice</a><br>
+                      <a href="#">View Details</a>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="card text-center">
+                  <div class="card-body">
+                     <div  style="display: flex; justify-content: space-between;">
+                      <p style="color: grey; font-size: 13px;" > Date </p> 
+                      <p style="color: grey; font-size: 13px;"> Time </p>
+                      <p style="color: grey; font-size: 13px;"> Status</p>
+                     </div> 
+                    <p class="card-text" style="display: block; text-align: left;">
+                     Name <br> Tests <br> Lab 
+                    </p>
+                   <a href="#" class="btn btn-primary" style="color: orange; background-color:white; float: right; font-weight: bold; border: 2px solid grey;">Test Again</a> <br><br>
+                   <a href="#" class="btn btn-primary" style="float: right; color: white; background-color: grey;font-weight: bold; border: 2px solid grey;">View Report</a> <br><br>
+                  </div>
+                  <div class="card-footer" >
+                    Total <br>
+                    <p style="color: black; font-size: 13px; font-weight: bold;"> Order Number</p>
+                    <div class="fft">
+                      <a href="#">Invoice</a><br>
+                      <a href="#">View Details</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+
+
+            
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script>
+          /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+              function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+                document.getElementById("main").style.marginLeft = "250px";
+              }
+
+              /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+              function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
+                document.getElementById("main").style.marginLeft = "0";
+              }
+        </script>
+    </body>
+</html>
