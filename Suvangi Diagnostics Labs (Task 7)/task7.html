@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!--linking the required cdns and googlefonts-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
+        <title>Suvangi (tests and lab)</title>
+    <style>
+        .navbar-custom
+        {
+            background-color: rgb(0, 0, 49);
+            padding-bottom: 50px;
+        }
+       
+        .navbar-brand
+        {
+            color: white;
+        }
+        .items ul
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            color: white;
+           
+        }
+        .container-fluid
+        {
+            padding: 0;
+        }
+        .items li
+        {
+            display: inline-block;
+        }
+       
+        .icon1
+        {
+            width: 20px;
+            height: 20px;
+        }
+        .icon2
+        {
+            width: 20px;
+            height: 20px;
+        }
+       .navbar-nav
+       {
+           display: inline-block;
+           
+       }
+       .nav-link
+       {
+       padding-right: 10px;
+       padding-left: 10px;
+       }
+       
+       .sidebar ul
+       {
+           list-style-type: none;
+       }
+       .formclass
+       {
+           background-color:#ff8900;
+           width: 230px;
+           border-radius: 20px;
+           height: 800px;
+           padding-top: 40px;
+           font-weight: bolder;
+           margin-left: 30px;
+           margin-bottom: -800px;
+           padding-left: -20px;
+       }
+       .ulsidebar
+       {
+           background-color: #ff8900;
+       }
+       .lisidebar
+       {
+           background-color: #ff8900;
+           padding: 7px;
+       }
+       .lisidebar a
+       {
+        color: black;
+       }
+       .lisidebar a:focus
+       {
+           background-color: rgb(0, 0, 49) ;
+           color: white;
+           
+       }
+       /*.tabs
+       {
+           display: inline-block;
+       }*/
+       .tab 
+       {
+            overflow: hidden;
+            
+            background-color:rgb(0, 0, 49) ;
+            float: right;
+            width: 65rem;
+            margin-right: 30px;
+            
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button
+        {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            color: white;
+            font-weight: 400;
+            padding-left: 45px;
+            padding-right: 45px;
+            padding-bottom: 5px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:focus
+        {
+            background-color: white;
+            border-radius: 10px 10px;
+            color: black;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active
+        {
+            background-color: white;
+            border-radius: 8px 8px 0 0;
+            color: black;
+        }
+
+        /* Style the tab content */
+        .tabcontent 
+        {
+            display: none;
+            padding: 30px;
+            border-top: none;
+            background-color: white;
+            width: 65rem;
+            float: right;
+            margin-right: 30px;
+            border-radius: 12px;
+        }
+        .tabcontent h3,p
+        {
+            background-color: white;
+           
+        }
+        .tabcontent hr
+        {
+            border-top: 2px solid darkgrey;
+
+        }
+        .diapic
+        {
+            width: 40px;
+            height: 40px;
+        }
+        .diabtn
+        {
+            background-color: orange;
+            border-radius: 20px;
+            font-weight: bolder;
+            color: black;
+            margin-right: 10px;
+            border: none;
+            padding-left: 10px;
+            padding-right: 15px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+        }
+        .secbtn
+        {
+            background-color: orange;
+            border-radius: 20px;
+            font-weight: bolder;
+            color: black;
+            margin-right: 10px;
+            border: none;
+            padding-left: 10px;
+            padding-right: 15px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            float: right;
+        }
+        .diaspan
+        {
+            float: right;
+            margin-top: -39px;
+            background-color: white;
+        }
+        hr
+        {
+            margin-top: 0;
+        }
+        .new
+        {
+        list-style-type: none; 
+        margin: 0; 
+        padding: 0;
+        background-color: white;
+        padding-top: 20px;
+        
+        }
+        .new a
+        {
+        color:rgb(0, 0, 49) ;
+        font-size: 15px;
+        font-weight: 500;
+        }
+        .new a:hover
+        {
+        cursor: pointer;
+        color: orange;
+        transition: .2s
+        }
+       
+        .new li
+        {
+        display: inline;
+        background-color: white;
+        padding-right: 50px;
+        }
+        .new li a.activenew
+        {
+        border-bottom: 5px solid black;
+        }
+        .activenew
+        {
+        border-bottom: 5px solid black;
+        }
+        .new.activenew
+        {
+            padding: 0;
+        }
+        .add
+        {
+            display: flex;
+            background-color: white;
+            padding-top: 15px;
+        }
+        .add p
+        {
+            padding-left: 0;
+            padding-right: 50px;
+        }
+        .tests
+        {
+            background-color: white;
+            color: black;
+            border: 2px solid rgb(1, 1, 58);
+            border-radius: 8px;
+            padding-left: 10px;
+            padding-right: 50px;
+            padding-bottom: 5px;
+        }
+        .tb ul 
+        {
+            list-style-type: none;
+            background-color: white;
+        }
+        .tb
+        {
+            padding: 20px;
+            background-color: white;
+            
+            box-shadow: 7px 7px 7px #f5eeee;
+            margin-top: 20px;
+        }
+        .tb li
+        {
+            float: left;
+            background-color: white;
+        }
+       .tb p 
+       {
+            padding-right: 160px;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            margin-left: -40px;
+       }
+       .tbli1
+       {
+           padding-left: 160px;
+       }
+
+
+
+       .tbentry ul 
+        {
+            list-style-type: none;
+            background-color: white;
+        }
+        .tbentry
+        {
+            padding: 20px;
+            background-color: white;
+            
+            
+        }
+        .tbentry li
+        {
+            float: left;
+            background-color: white;
+        }
+       .tbentry p 
+       {
+            padding-right: 160px;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            margin-left: -40px;
+            padding-left: 20px;
+       }
+       .tbli1e
+       {
+           padding-left: 360px;
+           color: green;
+       }
+       .tbli1e span
+       {
+           background-color: white;
+           float: right;
+           margin-top: -23px;
+       }
+      .tbli1e a
+      {
+        color: darkgrey;
+        text-decoration: none;
+        background-color: transparent;
+        font-weight: 600;
+        padding-right: 10px;
+      }
+      .tabletview
+      {
+          display: none;
+      }
+      /*@media only screen and (min-width: 1024px)
+      {
+          .tab
+          {
+              margin-right: -280px;
+          }
+          .tabcontent
+          {
+              margin-right: -287px;
+          }
+          .items
+          {
+              margin-right: -280px;
+          }
+      }*/
+      @media only screen and ( max-width: 768px)
+      {
+          .tabletview
+          {
+              background-color: #ff8900;
+              color: black;
+              display: inline;
+              margin-left: 30px;
+          }
+          
+          .tabletview a
+          {
+            background-color: #ff8900;
+            color: black;
+            font-weight: bolder;  
+            padding-right: 200px;
+            margin-right: -85px;
+            padding-bottom: 20px;
+            border-radius: 12px;
+          }
+          .formclass
+          {
+              display: none;
+          }
+          .sidebar
+          {
+              width: 1100px;
+          }
+          .tabs
+          {
+              margin-top: 50px;
+              margin-right: 30px;
+          }
+          .entryhr
+          {
+              margin-top: 20px;
+          }
+          .tabcontent
+          {
+              width: 45rem;
+              margin-left: 20px;
+              float: left;
+          }
+          .tb p
+          {
+              padding-right: 125px;
+          }
+          .tb li
+          {
+              padding-left: 0px;
+          } 
+          .tbentry p
+          {
+              padding-right: 130px;
+              
+          }
+          .activep
+          {
+              margin-top: -27px;
+              padding-left: 60px;
+              margin-left: 20px;
+          }
+          .activespan
+          {
+              margin-left: 90px;
+          }
+      }
+      /*@media only screen and ( min-width: 360px)
+      {
+        .tabletview
+        {
+            display: inline;
+            background-color: #ff8900;
+            padding-right: 85px;
+            margin-left: 10px;
+            padding-bottom: 20px;
+            border-radius: 12px;
+            margin-left: 5px;
+        }
+        .tabletview a 
+        {
+            color: black;
+        }
+        .formclass
+        {
+            display: none;
+        }
+        .tab
+        {
+            overflow: hidden;
+            background-color: rgb(0, 0, 49);
+            float: left;
+            width: 27rem;
+            margin-right: -698px;
+            padding-top: 30px;
+
+        }
+      }*/
+       *
+       {
+           background-color:rgb(0, 0, 49) ;
+       }
+      
+    </style>
+</head>
+<body>
+    <!--<div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">BIOLEGE</a>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    
+                    <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                    Location <br/> &nbsp;&nbsp;&nbsp;&nbsp; Enter PIN Code</a>
+                </li>   
+                <li class="nav-item active">
+                    
+                    <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                    hello <br/> &nbsp;&nbsp;&nbsp;&nbsp; Chenghis Khan</a>
+                </li>  
+            </ul>    
+            
+    </div>-->
+    <nav class="navbar navbar-custom"> 
+        <a class="navbar-brand" href="#"> 
+         BIOLEGE
+        </a> 
+        <div class="items">
+            <ul class="navbar-nav mr-auto" >
+                <li class="nav-item active">
+                    
+                    <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                    Location <br/> &nbsp;&nbsp;&nbsp;&nbsp; Enter PIN Code</a>
+                </li>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li class="nav-item active">
+                    
+                    <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                    hello <br/> &nbsp;&nbsp;&nbsp;&nbsp; Chenghis Khan</a>
+                </li>  
+            </ul>        
+        </div>
+    </nav>
+    <div class="tabdview">
+        <div id="mySidebar" class="sidebar">
+            <div class="formclass">
+                <ul class="ulsidebar">
+                    <li class="lisidebar">
+                    <a href="#"> &nbsp; My Details</a>
+                    </li>
+                    <li  class="lisidebar">
+                        <a href="#"> &nbsp; My Details</a>
+                    </li>
+                    <li  class="lisidebar">
+                        <a href="#"> &nbsp; My Details</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tabletview">
+                <a href="#"> &nbsp; My Details</a>
+                <a href="#"> &nbsp; My Details</a>
+                <a href="#"> &nbsp; My Details</a>
+            </div>
+            <div class="tabs">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'home')">HOME</button>
+                    <button class="tablinks" onclick="openCity(event, 'dia')">DIAGNOSTICS</button>
+                    <button class="tablinks" onclick="openCity(event, 'app')">APPOINTMENT</button>
+                    <button class="tablinks" onclick="openCity(event, 'ph')">PHARMACEUTICAL</button>
+                </div>
+                
+                <!-- Tab content -->
+                <div id="home" class="tabcontent">
+                    <h3>bleh</h3>
+                    <p>blehb;lhelhkhvghxubygcuiguygzuygzugrvniughv</p>
+                </div>
+                
+                <div id="dia" class="tabcontent">
+                   <h3>Tests and Labs</h3>
+                   <span class="diaspan">    
+                        <a><img src="search.png" class="diapic" alt=""></a>
+                        <button class="diabtn">+ Add Lab</button>
+                    </span>    
+                    <ul class="new">
+                        <li  ><a  href="#"  >Diagnostics</a></li> &nbsp;&nbsp;
+                        <li ><a  href="#">Doc Appointment</a></li> &nbsp;&nbsp;
+                        <li ><a  href="#">Pharmacy</a></li>&nbsp;&nbsp;
+                        <li class="activenew"><a  href="#">Media</a></li>&nbsp;&nbsp;
+                        <hr>
+                    </ul>
+                    <h3>Dr Lal Pathlabs</h3>
+                    <span class="add"><p class="addp">Address</p>
+                    <p>fygbuhnjsrdctfvgyhbjsrdtf edrtfygb</p></span>
+                    <select name="test" class="tests id="test">
+                        <option value="volvo">Single Tests</option>
+                        <option value="saab">Single Tests</option>
+                        <option value="opel">Single Tests</option>
+                        <option value="audi">Single Tests</option>
+                    </select>
+                    <button class="secbtn">+ Add Tests</button>
+                    
+                    <div class="tb">    
+                        <ul>
+                            <li >
+                                <p>Test Name</p>
+                            </li>
+                            <li>
+                                <p>Price</p>
+                            </li>
+                            <li>
+                                <p>Delivery By</p>
+                            </li>
+                            <li class="tbli1">
+                                <p>Status</p>
+                            </li>
+                        </ul>   
+                    </div>
+                    <div class="tbentry">    
+                        <ul>
+                            <li >
+                                <p>PBPS</p>
+                            </li>
+                            <li>
+                                <p>50</p>
+                            </li>
+                            <li>
+                                <p> </p>
+                            </li>
+                            <li class="tbli1e">
+                                
+                                <p class="activep" >Active</p>
+                                <span  class="activespan">
+                                    <a href="#">Delete</a>
+                                    <a href="#">Update</a>
+                                </span>
+                            </li>
+                        </ul>   
+                    </div>
+                    <hr class="entryhr">
+                    <div class="tbentry">    
+                        <ul>
+                            <li >
+                                <p>PBPS</p>
+                            </li>
+                            <li>
+                                <p>50</p>
+                            </li>
+                            <li>
+                                <p> </p>
+                            </li>
+                            <li class="tbli1e">
+                                
+                                <p class="activep" >Active</p>
+                                <span class="activespan">
+                                    <a href="#">Delete</a>
+                                    <a href="#">Update</a>
+                                </span>
+                            </li>
+                        </ul>   
+                    </div>
+                    <hr class="entryhr">
+                </div>
+                
+                <div id="app" class="tabcontent">
+                    <h3>bleh</h3>
+                    <p>blehb;lhelhkhvghxubygcuiguygzuygzugrvniughv</p>
+                </div>
+                <div id="ph" class="tabcontent">
+                    <h3>bleh</h3>
+                    <p>blehb;lhelhkhvghxubygcuiguygzuygzugrvniughv</p>
+                </div>
+            </div>   
+        </div>
+    </div>   
+    <script>
+        function openCity(evt, cityName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+    </script>  
+</body>
+</html>
