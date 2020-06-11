@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--linking the required cdns and googlefonts-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>Suvangi 9</title>
+    <style>
+        .navbar-nav
+        {
+            display: -webkit-inline-box;
+        }
+        .container-fluid
+        {
+            padding: 0;
+        }
+        .icon1
+        {
+            width: 20px;
+            height: 20px;
+        }
+        .icon1esp
+        {
+            width: 20px;
+            height: 20px;
+            margin-top: 11px;
+        }
+        .navbar-nav .nav-link
+        {
+            padding-right: 29px;
+            color: #007bff;
+        }
+        .welclass
+        {
+            font-size: 10px;
+            margin-top: -4px;
+        }
+        .welclass1
+        {
+            margin-top: -38px;
+        }
+        .navbar-brand
+        {
+            margin-top: -23px;
+        }
+        .navhr
+        {
+            border: 1px solid deepskyblue;
+            margin-top: -15px;
+        }
+        h3 
+        {
+            padding-left: 94px;
+            padding-top: 40px;
+        }
+        .headclass
+        {
+            border-radius: 6px;
+            background-color: rgb(0, 0, 49) ;
+            margin-left: 91px;
+            margin-right: 85px;
+            padding-top: 11px;
+            padding-bottom: 1px;
+            margin-top: 27px;
+            padding-left: 20px;
+        }
+        .formp
+        {
+            font-weight: initial;
+            color: white;
+            font-size: 20px;
+        }
+        .mainclass
+        {
+            box-shadow: 7px 7px 7px 7px #f5eeee;
+            margin-left: 90px;
+            margin-top: 26px;
+            margin-right: 83px;
+            padding: 40px;
+            
+        }
+        .firstp
+        {
+            color: grey;
+            margin-right: 785px;
+        }
+        .add
+        {
+            display: flex;
+        }
+        .addp
+        {
+            font-weight: bolder;
+            margin-right: 46px;
+        }
+        .icon2
+        {
+            border-radius: 50%;
+            float: right;
+            width: 129px;
+            height: 126px;
+            margin-top: -155px;
+            margin-right: 146px;
+        }
+        .formhr
+        {
+            border: 1px solid lightgrey;
+        }
+        .addpsec
+        {
+            font-weight: bold;
+        }
+        .add button
+        {
+            border-radius: 8px;
+            background-color: white;
+            color: rgb(0, 0, 49);
+            margin-left: -1px;
+            width: 135px;
+            border: 2px solid rgb(0, 0, 49);
+        }
+        .btnpic
+        {
+            width: 24px;
+            height: 25px;
+            float: right;
+        }
+        .thirdp
+        {
+            color: rgb(0, 0, 49);
+            margin-left: 11px;
+            padding-bottom: 45px;
+        }
+        .btn1
+        {
+            border: 2px solid lightgray;
+        }
+        .selrep
+        {
+            border-radius: 6px;
+            width: 142px;
+            border: 2px solid rgb(0,0,49);
+        }
+        .btnloc
+        {
+            border-radius: 8px;
+            margin-top: 28px;
+            background-color: rgb(0,0,49);
+            color: white;
+            width: 120px;
+            padding: 4px;
+            border: none;
+            margin-left: 35px;
+        }
+        .rightdiv
+        {
+            float: right;
+            margin-top: -340px;
+        }
+        .rightdiv p 
+        {
+            margin-bottom: 0;
+        }
+        .rightdiv h5
+        {
+            padding-bottom: 20px;
+        }
+        .formhrnew
+        {
+            margin:0;
+            border: 1px solid lightgray;
+        }
+        .rdpn
+        {
+            margin-left: auto;
+        }
+        .rdp
+        {
+            margin-right: 31px;
+        }
+        .rdbtn
+        {
+            border-radius: 8px;
+            background-color: orange;
+            color: black;
+            font-weight: bold;
+            float: right;
+            margin-top: 31px;
+            border: none;
+        }
+        @media only screen and ( max-width: 768px)
+        {
+            .icon2
+            {
+                margin-right: 24px;
+            }
+            .firstp
+            {
+                margin-right: 190px;
+            }
+            .rightdiv
+            {
+                float: left;
+                margin-top: 63px;
+            }
+            .mainclass
+            {
+                height: 1073px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-custom"> 
+            <a class="navbar-brand" href="#"> 
+            BIOLEGE
+            </a> 
+            <div class="items">
+                <ul class="navbar-nav mr-auto" >
+                    <li class="nav-item active">
+                        
+                        <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                        Orders</a>
+                    </li>  
+                    <li class="nav-item active">
+                        
+                        <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                        Reports</a>
+                    </li>'
+                    <li class="nav-item active">
+                        
+                        <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                        Notifications</a>
+                    </li>
+                    <li class="nav-item active">
+                        
+                        <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                        Add Customer</a>
+                    </li>  
+                    <li class="nav-item active" style="display: contents;">
+                        
+                        <img src="search.png" alt="icon" class="icon1esp">
+                        <a class="nav-link"><p class="welclass"> Welcome "Name"</p><br/> <p class="welclass1">My Account</p><span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>        
+            </div>
+        </nav>
+        <hr class="navhr">
+        <h3>Reports</h3>
+        <form class="headclass" action="#">
+            <p class="formp">Today, 25-01-2020</p>
+        </form>
+        <form class="mainclass" action="#">
+            
+            <h6>Chailex Sarma Khan</h6>
+            <p class="firstp">Dark Blue is a great color looking amazing hojai, AS-01</p>
+            <span class="add">
+                <p class="addp">Age</p>
+                <p>###</p>
+            </span>
+            <span class="add">
+                <p class="addp">Gender</p>
+                <p>Male</p>
+            </span>
+            <img src="art.jpg" alt="icon" class="icon2">
+            <hr class="formhr">
+            <div class="inputclass">
+                <span class="add">
+                    <p class="addp">Test Ordered</p>
+                    <p class="addpsec">Today, 25-01-2020</p>
+                </span>
+                <span class="add">
+                    <p class="addp">Test Type</p>
+                    <p>
+                        <button>Profile <img src="search.png" class="btnpic" alt=""></button>
+                        <button>Package <img src="search.png" class="btnpic" alt=""></button>
+                        <button>Single <img src="search.png" class="btnpic" alt=""></button>
+                    </p>
+                </span>
+                <span class="add">
+                    <p class="addp">Test Type</p>
+                    <p>
+                        <button>Thyroid Profile</button>
+                        <button>Lipid Profile</button>
+                        <button>Basic Body Test</button>
+                        <button>Hb1Ac</button>
+                    </p>
+                </span>
+                <span class="add">
+                    <p class="addp">Laboratory</p>
+                    <p class="thirdp">HAMM</p>
+                </span>
+                <span class="add">
+                    <p class="addp">Upload Report</p>
+                    <p > <button class="btn1">Choose File</button> </p>
+                </span>
+                <span class="add">
+                    <p class="addp">Report Delivered</p>
+                    <p > 
+                        <select name="reports" id="reports" class="selrep">
+                            <option value=""></option>
+                            <option value="">bleh</option>
+                            <option value="">bleh</option>
+                            <option value="">bleh</option>
+                        </select> 
+                    </p>
+                </span>
+                <button type="button" class="btnloc"> Get Direction</button>
+                <button type="button" class="btnloc"> Call Customer</button>
+            </div>
+            <div class="rightdiv">
+                <h5>Billing Options</h5>
+                <span class="add">
+                    <p class="rdp">Lipid Profile</p>
+                    <p class="rdpn">350</p>
+                </span>
+                <hr class="formhrnew">
+                <span class="add">
+                    <p class="rdp">Thyroid Profile</p>
+                    <p class="rdpn">450</p>
+                </span>
+                <span class="add">
+                    <p class="rdp">Hb1Ac</p>
+                    <p class="rdpn">400</p>
+                </span>
+                <span class="add">
+                    <p class="rdp">Package</p>
+                    <p class="rdpn">1120</p>
+                </span>
+                <hr class="formhrnew">
+                <span class="add">
+                    <p class="rdp">Total Price</p>
+                    <p class="rdpn">2320</p>
+                </span>
+                <span class="add">
+                    <p class="rdp">Delivery Charge</p>
+                    <p class="rdpn">20</p>
+                </span>
+                <span class="add">
+                    <p class="rdp">Membership Discount</p>
+                    <p class="rdpn">-50</p>
+                </span>
+                <hr class="formhrnew">
+                <span class="add">
+                    <p class="rdp">Total amount</p>
+                    <p class="rdpn">2290</p>
+                </span>
+                <button class="rdbtn">Collect Money</button>
+            </div>        
+        </form>
+    </div>
+</body>
+</html>
