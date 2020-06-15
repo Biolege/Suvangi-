@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--linking the required cdns and googlefonts-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>A3Suvangi</title>
+    <style>
+        .navbar-nav
+        {
+            display: -webkit-inline-box;
+        }
+        .container-fluid
+        {
+            padding: 0;
+        }
+        .icon1
+        {
+            width: 20px;
+            height: 20px;
+        }
+        .icon1esp
+        {
+            width: 20px;
+            height: 20px;
+            margin-top: 11px;
+        }
+        .navbar-nav .nav-link
+        {
+            padding-right: 29px;
+            color: #007bff;
+        }
+        .welclass
+        {
+            font-size: 10px;
+            margin-top: -4px;
+        }
+        .welclass1
+        {
+            margin-top: -38px;
+        }
+        .navbar-brand
+        {
+            margin-top: -23px;
+        }
+        .navhr
+        {
+            border: 1px solid deepskyblue;
+            margin-top: -15px;
+        }
+       
+        .pbform
+        {
+            box-shadow: 7px 7px 7px 7px #f5eeee;
+            padding: 10px;
+            height: 79px;
+        }
+        .pb
+        {
+            margin-top: 57px;
+            box-shadow: 7px 7px 7px 7px #f5eeee;
+        }
+        .pb ul
+        {
+            text-align: center;
+        }
+        .pb ul li
+        {
+            display: inline-block;
+            position: relative;
+        }
+        .pb img
+        {
+            width: 23px;
+            height: 25px;
+            border-radius: 50%;
+        }
+        .pb li
+        {
+            list-style-type: none;
+            float: left;
+            width: 31.33% ;   
+        }
+        .pb ul li:before 
+        {
+            content: '';
+            background: #ccc;
+            height: 2px;
+            width: 401px;
+            display: block;
+            position: absolute;
+            left: 215px;
+            top: 12px;    
+        }
+        .pb ul li:last-child:before
+        {
+            content: none;
+        }
+        .pb li.active 
+        {
+            color: green;
+            
+        }
+        .pb li.active img
+        {
+            color: green;
+        }
+        h3 
+        {
+            padding-left: 94px;
+            padding-top: 40px;
+            margin-bottom: 26px;
+        }
+        .addp
+        {
+            margin-top: 0px;
+            margin-left: 97px;
+            font-weight: bold;
+        }
+        .add
+        {
+            display: flex;
+        }
+        .addpsec
+        {
+            margin-top: 0px;
+            margin-left: auto;
+           margin-right: 899px;
+        }
+        .deetbtn
+        {
+            border-radius: 7px;
+            margin-left: 100px;
+            margin-top: 20px;
+            width: 150px;
+            margin-bottom: 40px;
+            color: deepskyblue;
+            background-color: white;
+            border: 1px solid;
+        }
+        .deetbtn:hover
+        {
+            cursor: pointer;
+        }
+        .testclass
+        {
+            float: right;
+            margin-right: 516px;
+            margin-top: -452px;
+            margin-left: 196px;
+        }
+        .tcs 
+        {
+            display: flex;
+        }
+        .tca 
+        {
+            margin-left: 82px;
+            margin-right: -71px;
+        }
+        .tci 
+        {
+            margin-left: 151px;
+            margin-right: -71px;  
+        }
+        .addpnew
+        {
+            margin-top: 0px;
+            margin-left: 190px;
+            font-weight: bold;
+        }
+        .rform
+        {
+            box-shadow: 7px 7px 7px 7px #f5eeee;
+            float: right;
+            margin-top: -462px;
+            margin-right: 85px;
+            padding: 20px;
+            width: 330px;
+        }
+        h5
+        {
+            font-weight: normal;
+        }
+        .labp
+        {
+            font-weight: normal;
+            font-size: 18px;
+            margin-bottom: 20px;
+            margin-top: -12px;
+        }
+        .dntp
+        {
+            color: grey;
+            font-size: 12px;
+            width: 50%;
+            margin-bottom: 0;
+        }
+       
+        .dntp2
+        {
+            width: 50%;
+        }
+        .rightdiv p 
+        {
+            margin-bottom: 0;
+        }
+        .rightdiv h5
+        {
+            padding-bottom: 20px;
+        }
+        .formhrnew
+        {
+            margin:0;
+            border: 1px solid lightgray;
+        }
+        .rdpn
+        {
+            margin-left: auto;
+        }
+        .rdp
+        {
+            margin-right: 31px;
+        }
+        .rdbtn
+        {
+            border-radius: 8px;
+            background-color: orange;
+            color: black;
+            font-weight: bold;
+            float: right;
+            margin-top: 31px;
+            border: none;
+            width: 289px;
+        }
+        .dnt1
+        {
+            display: flex;
+        }
+        .dnt2
+        {
+            display: flex;
+        }
+        @media only screen and ( max-width: 768px)
+        {
+            .pb ul li:before
+            {
+                width: 211px;
+                left: 112px;
+            }
+            .addpsec
+            {
+                margin-right: 455px;
+            }
+            .testclass
+            {
+                margin-right: 227px;
+                margin-top: -452px;
+            }
+            .rform
+            {
+                margin-top: -210px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-custom"> 
+            <a class="navbar-brand" href="#"> 
+            BIOLEGE
+            </a> 
+            <div class="items">
+                <ul class="navbar-nav mr-auto" >
+                    <li class="nav-item active">
+                        
+                        <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                        Orders</a>
+                    </li>  
+                    <li class="nav-item active">
+                        
+                        <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                        Reports</a>
+                    </li>'
+                    <li class="nav-item active">
+                        
+                        <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                        Notifications</a>
+                    </li>
+                    <li class="nav-item active">
+                        
+                        <a class="nav-link"> <img src="search.png" alt="icon" class="icon1">
+                        Add Customer</a>
+                    </li>  
+                    <li class="nav-item active" style="display: contents;">
+                        
+                        <img src="search.png" alt="icon" class="icon1esp">
+                        <a class="nav-link"><p class="welclass"> Welcome "Name"</p><br/> <p class="welclass1">My Account</p><span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>        
+            </div>
+        </nav>
+        <hr class="navhr">
+        
+            <div class="pb">
+                <form action="#" class="pbform">
+                    <ul>
+                        <li class="active">
+                            <img src="search.png" alt="" class="limg">
+                            <p>Select tests and labs</p>
+                        </li>
+                        <li>
+                            <img src="search.png" alt="" class="limg">
+                            <p>Patient Details</p>
+                        </li>
+                        <li>
+                            <img src="search.png" alt="" class="limg">
+                            <p>Payments</p>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        <h3>Patient Details</h3>
+        <div class="details">
+            <span class="add">
+                <p class="addp">Name</p>
+                <p class="addpsec">Agnideep Sengupta</p>
+            </span>
+            <span class="add">
+                <p class="addp">Gender</p>
+                <p class="addpsec">Male</p>
+            </span>
+            <span class="add">
+                <p class="addp">Date Of Birth</p>
+                <p class="addpsec">00-00-0000</p>
+            </span>
+            <span class="add">
+                <p class="addp">Age</p>
+                <p class="addpsec">21</p>
+            </span>
+            <span class="add">
+                <p class="addp">Contact</p>
+                <p class="addpsec">1234567890</p>
+            </span>
+            <span class="add">
+                <p class="addp">Email</p>
+                <p class="addpsec">abc@gmail.com</p>
+            </span>
+            <span class="add">
+                <p class="addp">Blood Group</p>
+                <p class="addpsec">B+</p>
+            </span>
+            <span class="add">
+                <p class="addp">Biolege Membership</p>
+                <p class="addpsec">Yes</p>
+            </span>
+            <span class="add">
+                <p class="addp">Member Model</p>
+                <p class="addpsec">Family</p>
+            </span>
+            <button class="deetbtn">Add Patient</button>
+        </div>
+        <div class="testclass">
+            <span class="tcs">
+                <p class="addpnew">Tests Selected</p>
+                <a href="#" class="tca">Add</a>
+            </span>
+            <span class="tcs">
+                <p class="addpnew">Hb1Ac</p>
+                <a class="tci"><i class="far fa-times-circle"></i></a> 
+            </span>
+            <span class="tcs">
+                <p class="addpnew">Random Blood Sugar</p>
+                <a class="tci"><i class="far fa-times-circle"></i></a> 
+            </span>
+            <span class="tcs">
+                <p class="addpnew">Thyroid Profile</p>
+                <a class="tci"><i class="far fa-times-circle"></i></a> 
+            </span>
+            
+        </div>
+        <form action="#" class="rform">
+            <h5>Laboratory</h5>
+            <p class="labp">Laboratory Name</p>
+            <h5>Sample Collection</h5>
+            <div class="dnt1">
+                <p class="dntp">Date</p>
+                <p class="dntp">Time</p>
+                
+            </div>
+            <div class="dnt">
+                <div class="dnt2">    
+                    <p class="dntp2">April 03, 2020</p>
+                    <p class="dntp2">08:30AM</p>
+                </div>    
+                <div class="rightdiv">
+                    <h5>Billing Options</h5>
+                    <span class="add">
+                        <p class="rdp">Lipid Profile</p>
+                        <p class="rdpn">350</p>
+                    </span>
+                    <hr class="formhrnew">
+                    <span class="add">
+                        <p class="rdp">Thyroid Profile</p>
+                        <p class="rdpn">450</p>
+                    </span>
+                    <span class="add">
+                        <p class="rdp">Hb1Ac</p>
+                        <p class="rdpn">400</p>
+                    </span>
+                    <span class="add">
+                        <p class="rdp">Package</p>
+                        <p class="rdpn">1120</p>
+                    </span>
+                    <hr class="formhrnew">
+                    <span class="add">
+                        <p class="rdp">Total Price</p>
+                        <p class="rdpn">2320</p>
+                    </span>
+                    <span class="add">
+                        <p class="rdp">Delivery Charge</p>
+                        <p class="rdpn">20</p>
+                    </span>
+                    <span class="add">
+                        <p class="rdp">Membership Discount</p>
+                        <p class="rdpn">-50</p>
+                    </span>
+                    <hr class="formhrnew">
+                    <span class="add">
+                        <p class="rdp">Total amount</p>
+                        <p class="rdpn">2290</p>
+                    </span>
+                    <button class="rdbtn">Collect Money</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
