@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!--linking the required cdns and googlefonts-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>SuvangiDrAppointmentViewProfile</title>
+    <style>
+        .navbar-nav
+        {
+            display: -webkit-inline-box;
+        }
+        .navbar 
+        {
+            background-color: blue;
+            padding-top: 33px;
+            padding-bottom: 0;
+        }
+        .items
+        {
+            margin-left: 959px;
+        }
+        .container-fluid
+        {
+            padding: 0;
+        }
+        .icon1
+        {
+            width: 20px;
+            height: 20px;
+        }
+        .icon1esp
+        {
+            width: 20px;
+            height: 20px;
+            margin-top: 11px;
+        }
+        .navbar-nav .nav-link
+        {
+            padding-right: 29px;
+            color: white;
+        }
+        .welclass
+        {
+            font-size: 10px;
+            margin-top: -4px;
+            margin-left: 5px;
+        }
+        .welclass1
+        {
+            margin-top: -47px;
+            margin-left: 5px;
+        }
+        .welclassf
+        {
+            font-size: 10px;
+            margin-top: -32px;
+            margin-left: 26px;
+        }
+        .welclassf1
+        {
+            margin-top: -47px;
+            margin-left: 26px;
+            font-size: 10px;
+        }
+        .itemsleft .welclassf
+        {
+            font-size: medium;
+        }
+        .itemsleft
+        {
+            margin-bottom: -24px;
+        }
+        .itemsleft .welclassf
+        {
+            padding-bottom: 5px;
+        }
+        .itemsleft .welclassf1
+        {
+            padding-bottom: 5px;
+            font-size: 13px;
+        }
+        .firstform
+        {
+            padding: 30px;
+            border: 2px solid blue;
+            margin-top: 66px;
+            margin-left: 76px;
+            margin-right: 113px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            padding-bottom: 0;
+        }
+        .docinfo
+        {
+            padding: 20px;
+            display: flex;
+        }
+        .docinfo img
+        {
+            width: 128px;
+            height: 117px;
+            border-radius: 50%;
+        }
+        .docinfo h3 
+        {
+            margin-left: 29px;
+        }
+        .docinfo ul
+        {
+            list-style-type: none;
+            margin-top: 41px;
+            margin-left: -299px;
+        }
+        .docinfo li
+        {
+            padding-bottom: 5px;
+        }
+        .docinfo a
+        {
+            color: gray;
+        }
+        .docinfo a:hover
+        {
+            text-decoration: none;
+        }
+        .rightavail h3 
+        {
+            color: deepskyblue;
+            margin-left: 61px;
+        }
+        .rightavail
+        {
+            float: right;
+            margin-left: 423px;
+        }
+        .btn1
+        {
+            margin-top: 43px;
+            background-color: midnightblue;
+            color: white;
+            margin-left: 75px;
+            border: none;
+            border-radius: 37px;
+            padding: 11px;
+            width: 191px;
+            font-weight: bold;
+        }
+        .btnp2
+        {
+            margin-top: -21px;
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+        .btn2
+        {
+            display: block;
+            margin-left: 80px;
+            margin-top: 18px;
+            background-color: darkorange;
+            border: none;
+            border-radius: 20px;
+            padding: 7px;
+            width: 192px;
+            font-weight: bold;
+        }
+        .cantca
+        {
+            display: flex;
+            margin-left: 23px;
+        }
+        .cantca a
+        {
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            font-size: larger;
+        }
+        .cantca .active
+        {
+            border-bottom: 4px solid black;
+        }
+        .vl 
+        {
+            border-left: 3px solid gray;
+            height: 24px;
+            margin-left: 8px;
+            margin-right: 10px;
+        }
+        .card 
+        {
+            width: 18rem;
+            margin-left: 20px;
+            border: 2px solid lightgrey;
+            border-radius: 9px;
+        }
+        h4 
+        {
+            font-size: 1.5rem;
+            margin-top: 24px;
+            margin-left: 20px;
+            margin-bottom: 31px;
+        }
+        .clinic
+        {
+            display: flex;
+        }
+        .card-text
+        {
+            font-size: 12px;
+            color: grey;
+        }
+        .daycards .card
+        {
+            border: 2px solid deepskyblue;
+            width: 158px;
+        }
+        .daycards .card-body
+        {
+            margin-bottom: -17px;
+            margin-top: -18px;
+            text-align: center;
+        }
+        .daycards .card-title
+        {
+            margin-bottom: 0;
+            color: deepskyblue;
+        }
+        .timings span
+        {
+            display: flex;
+        }
+        .timings p
+        {
+            font-size: 13px;
+            margin-bottom: 0;
+            color: gray;
+            margin-left: 21px;
+        }
+        .daycards
+        {
+            display: flex;
+        }
+        .tod 
+        {
+            font-size: 16px;
+            color: grey;
+            margin-top: -25px;
+            margin-left: 21px;
+        }
+        .btnclass button 
+        {
+            background-color: white;
+            border: 2px solid grey;
+            border-radius: 5px;
+            margin-left: 19px;
+            color: grey;
+        }
+        .btnclass
+        {
+            margin-top: -10px;
+        }
+        .todcls
+        {
+            margin-bottom: 55px;
+        }
+        .endbtn
+        {
+            float: right;
+            background-color: darkorange;
+            border: none;
+            border-radius: 18px;
+            margin-top: -32px;
+            padding: 5px 20px 5px 20px;
+            font-weight: bold;
+        }
+        .tab 
+       {
+            overflow: hidden;
+            background-color:white ;
+            float: right;
+            width: 65rem;
+            margin-right: 235px;
+            margin-bottom: 10px;
+            margin-top: 32px;
+            
+        }
+
+        /* Style the buttons that are used to open the tab content */
+        .tab button
+        {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            color: deepskyblue;
+            font-weight: 400;
+            padding-left: 45px;
+            padding-right: 45px;
+            padding-bottom: 5px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:focus
+        {
+            background-color: white;
+            border-radius: 10px 10px;
+            color: black;
+            border: 2px solid deepskyblue;
+            z-index: 2;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active
+        {
+            background-color: white;
+            border-radius: 8px 8px 0 0;
+            color: black;
+            border: 2px solid deepskyblue; 
+            border-bottom: 0;
+            z-index: 2;
+        }
+
+        /* Style the tab content */
+        .tabcontent 
+        {
+            display: none;
+            padding: 30px;
+            border-top: none;
+            background-color: white;
+            width: 65rem;
+            float: right;
+            margin-right: 235.5px;
+            margin-top: -11px;
+            border: 2px solid deepskyblue;
+            z-index: 1;
+            height: 1000px;
+            margin-bottom: 20px;
+        }
+        .diadiv
+        {
+            display: flex;
+        }
+        .diaimg
+        {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-top: 22px;
+        }
+        .diadiv h4
+        {
+            margin-left: 24px;
+        }
+        .diafeedback p
+        {
+            margin-left: 22px;
+            overflow-wrap: break-word;
+        }
+        .diafeedback
+        {
+            margin-left: 45px;
+            margin-top: -12px;
+        }
+        @media only screen and ( max-width: 768px)
+        {
+            .items
+            {
+                margin-left: 428px;
+                margin-top: -13px;
+            }
+            .itemsleft
+            {
+                margin-top: 22px;
+            }
+            .docinfo img 
+            {
+                width: 46px;
+                height: 47px;
+                border-radius: 50%;
+            }
+            .docinfo h3 
+            {
+                white-space: nowrap;
+            }
+            .docinfo a
+            {
+                white-space: nowrap;
+            }
+            .rightavail
+            {
+                display: contents;
+            }
+            .rightavail h3 
+            {
+                margin-left: -248px;
+                margin-top: 177px;
+            }
+            .btn1
+            {
+                height: 57px;
+                margin-top: 170px;
+            }
+            .btn2
+            {
+                height: 44px;
+                margin-top: 252px;
+                margin-left: -193px;
+            }
+            .daycards
+            {
+                flex-flow: wrap;
+            }
+            .dcitems
+            {
+                margin-bottom: 27px;
+            }
+            .btnclass button 
+            {
+                margin-top: 18px;
+            }
+            .endbtn 
+            {
+                margin-top: 7px;
+            }
+            .tabs 
+            {
+                display: grid;
+                margin-left: 28px;
+                margin-bottom: 20px;
+            }
+            .tabcontent
+            {
+                width: 37rem;
+                margin-bottom: 20px;
+                margin-left: 41px;
+            }
+            .tab button:first-child
+            {
+                margin-left: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-custom">  
+            <div class="items">
+                <ul class="navbar-nav mr-auto" >
+                    <li class="nav-item active">
+                        <img src="search.png" alt="icon" class="icon1esp">
+                        <a class="nav-link">  
+                            <p class="welclassf"> Data Security</p><br/> <p class="welclassf1">and others</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        
+                        <img src="search.png" alt="icon" class="icon1esp">
+                        <a class="nav-link">  
+                            <p class="welclassf"> For</p><br/> <p class="welclassf1">Business</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>  
+                    <li class="nav-item active" style="display: contents;">
+                        
+                        
+                        <img src="search.png" alt="icon" class="icon1esp">
+                        <a class="nav-link">  
+                            <p class="welclass" > Welcome "Name"</p><br/> <p class="welclass1">My Account</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="itemsleft">   
+                <ul class="navbar-nav mr-auto" >
+                    <li class="nav-item active">
+                        <a class="nav-link">  
+                            <p class="welclassf">Diagnostics</p><br/> <p class="welclassf1">Book tests</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">  
+                            <p class="welclassf">Doctors</p><br/> <p class="welclassf1">Book appointments</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">  
+                            <p class="welclassf">Pharmacy</p><br/> <p class="welclassf1">Order medicine</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link">  
+                            <p class="welclassf">Media</p><br/> <p class="welclassf1">Article</p><span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                </ul>        
+            </div>
+        </nav>
+        <form action="#" class="firstform">
+            <div class="docinfo">
+                <img src="art.jpg" alt="bleh">
+                <h3>Dr Radhaswamy Iyer</h3>
+                <ul>
+                    <li>
+                        <a href="#">Speciality</a>
+                    </li> 
+                    <li>
+                        <a href="#">Degree and course details</a>
+                    </li>
+                    <li>
+                        <a href="#">12 years experience</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-check-circle green-text pr-1" aria-hidden="true"></i>
+                        <a href="#">Verified</a>
+                    </li>
+                </ul>
+                <div class="rightavail">
+                    <h3>Available Today</h3>
+                    <button class="btn1">
+                        <p class="btnp1">Tele Consultation</p>
+                        <p class="btnp2">for Rs. 200</p>
+                    </button>
+                    <button class="btn2">Book Appointment</button>
+                </div>
+            </div>
+            <div class="cantca">
+                <a href="#" class="active">Clinic Appointment</a>
+                <div class="vl"></div>
+                <a href="#">Tele-Consultation Appointment</a>
+            </div>
+            <h4>Choose Clinic</h4>    
+            <div class="clinic">
+                <div class="card" >
+                    <div class="card-body">
+                        <h5 class="card-title">Dona Medicos Clinic</h5>
+                        <p class="card-text">xdcfvghbjnyxrdtcfyjvgkhbjnk drtfyvgbhunj7tcufvygibhjn drftyghubnjrdtfg</p>
+                    </div>
+                </div>
+                <div class="card" >
+                    <div class="card-body">
+                        <h5 class="card-title">Dona Medicos Clinic</h5>
+                        <p class="card-text">xdcfvghbjnyxrdtcfyjvgkhbjnk drtfyvgbhunj7tcufvygibhjn drftyghubnjrdtfg</p>
+                    </div>
+                </div>
+            </div>
+            <h4>Available On</h4>
+            <div class="daycards">
+                <div class="dcitems">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monday</h5>
+                            <p class="card-text">xdcfvghb</p>
+                        </div>
+                    </div>
+                    <div class="timings">
+                        <span>
+                            <p>Morning</p>
+                            <p>11am-1:30pm</p>
+                        </span>
+                        <span>
+                            <p>Evening</p>
+                            <p>6:30pm-9:00pm</p>
+                        </span>
+                    </div>
+                </div> 
+                <div class="dcitems">   
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monday</h5>
+                            <p class="card-text">xdcfvghb</p>
+                        </div>
+                    </div>
+                    <div class="timings">
+                        <span>
+                            <p>Morning</p>
+                            <p>11am-1:30pm</p>
+                        </span>
+                        <span>
+                            <p>Evening</p>
+                            <p>6:30pm-9:00pm</p>
+                        </span>
+                    </div>
+                </div> 
+                <div class="dcitems">   
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monday</h5>
+                            <p class="card-text">xdcfvghb</p>
+                        </div>
+                    </div>
+                    <div class="timings">
+                        <span>
+                            <p>Morning</p>
+                            <p>11am-1:30pm</p>
+                        </span>
+                        <span>
+                            <p>Evening</p>
+                            <p>6:30pm-9:00pm</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="dcitems">   
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monday</h5>
+                            <p class="card-text">xdcfvghb</p>
+                        </div>
+                    </div>
+                    <div class="timings">
+                        <span>
+                            <p>Morning</p>
+                            <p>11am-1:30pm</p>
+                        </span>
+                        <span>
+                            <p>Evening</p>
+                            <p>6:30pm-9:00pm</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="dcitems">   
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Monday</h5>
+                            <p class="card-text">xdcfvghb</p>
+                        </div>
+                    </div>
+                    <div class="timings">
+                        <span>
+                            <p>Morning</p>
+                            <p>11am-1:30pm</p>
+                        </span>
+                        <span>
+                            <p>Evening</p>
+                            <p>6:30pm-9:00pm</p>
+                        </span>
+                    </div>
+                </div>   
+            </div>
+            <h4>Slot Available</h4>
+            <div class="todcls">
+                <p class="tod">Morning</p>
+                <div class="btnclass">
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                </div>
+            </div>
+            <div class="todcls">
+                <p class="tod">Afternoon</p>
+                <div class="btnclass">
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                </div>
+            </div>
+            <div class="todcls">
+                <p class="tod">Evening</p>
+                <div class="btnclass">
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                </div>
+            </div>
+            <div class="todcls">
+                <p class="tod">Night</p>
+                <div class="btnclass">
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                    <button>11:00 am</button>
+                </div>
+                <button class="endbtn">Book Appointment</button>
+            </div>          
+        </form>
+        <div class="tabs">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'home')">About</button>
+                <button class="tablinks" onclick="openCity(event, 'dia')">Customer Feedback</button>
+                <button class="tablinks" onclick="openCity(event, 'app')">Articles</button>
+            </div>
+            <div id="home" class="tabcontent">
+                <h3>bleh</h3>
+                <p>blehb;lhelhkhvghxubygcuiguygzuygzugrvniughv</p>
+            </div>
+            <div id="dia" class="tabcontent">
+                <div class="diadiv">
+                    <img src="art.jpg" alt="img" class="diaimg"> 
+                    <h4>Customer Name</h4>
+                </div>
+                <div class="diafeedback">
+                    <h4>Feedback Heading</h4>
+                    <p>blehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughv</p>
+                </div>
+                <div class="diadiv">
+                    <img src="art.jpg" alt="img" class="diaimg"> 
+                    <h4>Customer Name</h4>
+                </div>
+                <div class="diafeedback">
+                    <h4>Feedback Heading</h4>
+                    <p>blehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughvblehb;lhelhkhvghxubygcuiguygzuygzugrvniughv</p>
+                </div>
+            </div>
+            <div id="app" class="tabcontent">
+                <h3>bleh</h3>
+                <p>blehb;lhelhkhvghxubygcuiguygzuygzugrvniughv</p>
+            </div>
+        </div>    
+    </div>
+    <script>
+        function openCity(evt, cityName) 
+         {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+            }
+    </script>
+</body>
+</html>
